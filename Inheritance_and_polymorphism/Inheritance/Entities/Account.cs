@@ -25,7 +25,7 @@ namespace Inheritance.Entities
             Balance -= amount;
         }
 
-        public void Deposittet(double amount)
+        public void Deposite(double amount)
         {
             Balance += amount;
         }

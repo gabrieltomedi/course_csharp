@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Inheritance2.Entities
+﻿
+namespace Inheritance3.Entities
 {
     internal class Account
     {
@@ -24,14 +19,16 @@ namespace Inheritance2.Entities
             Balance = balance;
         }
 
-        public void Withdraw(double amount)
+        //using vitual so it can be override in the subclass
+        public virtual void Withdraw(double amount)
         {
-            Balance -= amount;
+            Balance -= amount + 5.0;  
         }
 
         public void Deposite(double amount)
         {
             Balance += amount;
         }
+
     }
 }
