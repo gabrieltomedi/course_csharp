@@ -15,7 +15,7 @@ namespace Inheritance5
 
             for (int i=1; i<= n; i++)
             {
-                Console.WriteLine($"Product #{n} data:");
+                Console.WriteLine($"Product #{i} data:");
                 Console.Write("Common, used or imported? ");
                 char type = char.Parse(Console.ReadLine());
                 Console.Write("Name: ");
