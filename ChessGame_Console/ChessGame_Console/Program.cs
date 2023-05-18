@@ -6,10 +6,7 @@ namespace ChessGame_Console
     {
         static void Main(string[] args)
         {
-            Position p = new Position(3, 4);
-
-            Console.Write("Position: " + p);
-            Console.WriteLine();
+            ChessBoard board = new ChessBoard(8,8);
         }
     }
 }
