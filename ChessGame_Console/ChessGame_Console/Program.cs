@@ -7,11 +7,22 @@ namespace ChessGame_Console
     {
         static void Main(string[] args)
         {
-            ChessPosition chessPosition = new ChessPosition('c', 7);
+            try
+            {
+                ChessBoard board = new ChessBoard(8, 8);
 
-            Console.WriteLine(chessPosition);
+                board.PlacePiece(new Rook(board, Color.Black), new Position(0, 0));                
+                board.PlacePiece(new Rook(board, Color.Black), new Position(1, 3));
+                board.PlacePiece(new King(board, Color.Black), new Position(0, 2));
 
-            Console.WriteLine(chessPosition.ConvertToPosition());
+                board.PlacePiece(new Rook(board, Color.White), new Position(3, 5));
+
+                Screen.PrintBoard(board);
+            }
+            catch (BoardExcepition e)
+            {
+                Console.WriteLine(e.Message);
+            }
 
             Console.WriteLine();
         }
