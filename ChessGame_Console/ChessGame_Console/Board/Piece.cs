@@ -2,7 +2,7 @@
 
 namespace Board
 {
-    internal class Piece
+    internal abstract class Piece
     {
         public Position Position { get; set; }
         public Color Color { get; protected set; }
@@ -16,6 +16,8 @@ namespace Board
             Color = color;
             MovementsAmount = 0;
         }
+
+        public abstract bool[,] PossibleMovements();
 
         public void IncreaseMoveAmount()
         {
