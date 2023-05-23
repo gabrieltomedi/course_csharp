@@ -45,5 +45,10 @@ namespace Board
         {
             MovementsAmount++;
         }
+
+        public void DecreaseMoveAmount()
+        {
+            MovementsAmount--;
+        }
     }
 }
