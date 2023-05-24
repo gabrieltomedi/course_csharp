@@ -5,8 +5,11 @@ namespace Chess
 {
     internal class Pawn : Piece
     {
-        public Pawn(ChessBoard board, Color color) : base(board, color)
+        private ChessMatch Match;
+
+        public Pawn(ChessBoard board, Color color, ChessMatch match) : base(board, color)
         {
+            Match = match;
         }
 
         public override string ToString()
@@ -56,6 +59,21 @@ namespace Chess
                 {
                     movements[position.Line, position.Column] = true;
                 }
+
+                //# Special Move: En passant
+                if (Position.Line == 3)
+                {
+                    Position leftPos =  new Position(Position.Line, Position.Column - 1);
+                    if(Board.IsValidPosition(leftPos) && OpponentExist(leftPos) && Board.Piece(leftPos) == Match.VulnerableToEnPassant)
+                    {
+                        movements[leftPos.Line - 1, leftPos.Column] = true;
+                    }
+                    Position RightPos = new Position(Position.Line, Position.Column + 1);
+                    if (Board.IsValidPosition(RightPos) && OpponentExist(RightPos) && Board.Piece(RightPos) == Match.VulnerableToEnPassant)
+                    {
+                        movements[RightPos.Line - 1, RightPos.Column] = true;
+                    }
+                }
             }
             else
             {
@@ -81,6 +99,21 @@ namespace Chess
                 if (Board.IsValidPosition(position) && OpponentExist(position))
                 {
                     movements[position.Line, position.Column] = true;
+                }
+
+                //# Special Move: En passant
+                if (Position.Line == 4)
+                {
+                    Position leftPos = new Position(Position.Line, Position.Column - 1);
+                    if (Board.IsValidPosition(leftPos) && OpponentExist(leftPos) && Board.Piece(leftPos) == Match.VulnerableToEnPassant)
+                    {
+                        movements[leftPos.Line + 1, leftPos.Column] = true;
+                    }
+                    Position RightPos = new Position(Position.Line, Position.Column + 1);
+                    if (Board.IsValidPosition(RightPos) && OpponentExist(RightPos) && Board.Piece(RightPos) == Match.VulnerableToEnPassant)
+                    {
+                        movements[RightPos.Line + 1, RightPos.Column] = true;
+                    }
                 }
             }
 
