@@ -1,11 +1,17 @@
-﻿using Board;
+﻿using System;
+using Board;
 
 namespace Chess
 {
-    internal class Rook : Piece
+    internal class Bishop : Piece
     {
-        public Rook(ChessBoard board, Color color) : base(board, color)
+        public Bishop(ChessBoard board, Color color) : base(board, color)
         {
+        }
+
+        public override string ToString()
+        {
+            return "B";
         }
 
         private bool CanMove(Position position)
@@ -20,60 +26,57 @@ namespace Chess
 
             Position position = new Position(0, 0);
 
-            //Up
-            position.DefineValues(Position.Line - 1, Position.Column);
-            while(Board.IsValidPosition(position) && CanMove(position))
+            //NE
+            position.DefineValues(Position.Line - 1, Position.Column + 1);
+            while (Board.IsValidPosition(position) && CanMove(position) )
             {
                 movements[position.Line, position.Column] = true;
-                if(Board.Piece(position) != null && Board.Piece(position).Color != Color)
+                if (Board.Piece(position) != null && Board.Piece(position).Color != Color)
                 {
-                    break;
+                    movements[position.Line, position.Column] = true;
                 }
-                position.Line--;
+                position.DefineValues(position.Line -1, position.Column + 1);
             }
 
-            //Down
-            position.DefineValues(Position.Line + 1, Position.Column);
+
+            //SE
+            position.DefineValues(Position.Line + 1, Position.Column + 1);
             while (Board.IsValidPosition(position) && CanMove(position))
             {
                 movements[position.Line, position.Column] = true;
                 if (Board.Piece(position) != null && Board.Piece(position).Color != Color)
                 {
-                    break;
+                    movements[position.Line, position.Column] = true;
                 }
-                position.Line++;
+                position.DefineValues(position.Line + 1, position.Column + 1);
             }
 
-            //Right
-            position.DefineValues(Position.Line, Position.Column + 1);
+            //SW
+            position.DefineValues(Position.Line + 1, Position.Column - 1);
             while (Board.IsValidPosition(position) && CanMove(position))
             {
                 movements[position.Line, position.Column] = true;
                 if (Board.Piece(position) != null && Board.Piece(position).Color != Color)
                 {
-                    break;
+                    movements[position.Line, position.Column] = true;
                 }
-                position.Column++;
+                position.DefineValues(position.Line + 1, position.Column - 1);
             }
 
-            //Left
-            position.DefineValues(Position.Line, Position.Column - 1);
+            //NW
+            position.DefineValues(Position.Line - 1, Position.Column - 1);
             while (Board.IsValidPosition(position) && CanMove(position))
             {
                 movements[position.Line, position.Column] = true;
                 if (Board.Piece(position) != null && Board.Piece(position).Color != Color)
                 {
-                    break;
+                    movements[position.Line, position.Column] = true;
                 }
-                position.Column--;
+                position.DefineValues(position.Line - 1, position.Column - 1);
             }
 
             return movements;
         }
 
-        public override string ToString()
-        {
-            return "R";
-        }
     }
 }
