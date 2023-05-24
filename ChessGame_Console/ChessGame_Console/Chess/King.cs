@@ -4,8 +4,11 @@ namespace Chess
 {
     internal class King : Piece
     {
-        public King(ChessBoard board, Color color) : base(board, color)
+        private ChessMatch Match;
+
+        public King(ChessBoard board, Color color, ChessMatch match) : base(board, color)
         {
+            Match = match;  
         }
 
         public override string ToString()
@@ -17,6 +20,12 @@ namespace Chess
         {
             Piece piece = Board.Piece(position);
             return piece == null || piece.Color != Color;
+        }
+
+        private bool TestRookForEspecialMove(Position possiton)
+        {
+            Piece p = Board.Piece(possiton);
+            return p != null && p is Rook && p.Color == Color && p.MovementsAmount == 0;
         }
 
         public override bool[,] PossibleMovements()
@@ -80,6 +89,34 @@ namespace Chess
             {
                 movements[position.Line, position.Column] = true;
             }
+
+            //# special move: Castling
+            if (MovementsAmount == 0 && !Match.Check)
+            {
+                Position RookPos = new Position(Position.Line, Position.Column + 3);
+                if (TestRookForEspecialMove(RookPos))
+                {
+                    Position p1 = new Position(Position.Line, Position.Column + 1);
+                    Position p2 = new Position(Position.Line, Position.Column + 2);
+                    if (Board.Piece(p1) == null && Board.Piece(p2) == null)
+                    {
+                        movements[Position.Line, Position.Column + 2] = true;
+                    }
+                }
+
+                Position RookPos2 = new Position(Position.Line, Position.Column + 3);
+                if (TestRookForEspecialMove(RookPos2))
+                {
+                    Position p1 = new Position(Position.Line, Position.Column - 1);
+                    Position p2 = new Position(Position.Line, Position.Column - 2);
+                    Position p3 = new Position(Position.Line, Position.Column - 3);
+                    if (Board.Piece(p1) == null && Board.Piece(p2) == null && Board.Piece(p3) == null)
+                    {
+                        movements[Position.Line, Position.Column - 2] = true;
+                    }
+                }
+            }         
+
 
             return movements;
         }
