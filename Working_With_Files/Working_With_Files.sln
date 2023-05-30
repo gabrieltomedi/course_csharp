@@ -5,17 +5,21 @@ VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Files1", "Files1\Files1.csproj", "{5643704F-B3D3-4E88-AD8C-8204DD296B90}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Files2", "File2\Files2.csproj", "{E74626DE-842E-4139-B6FB-F65F5E445FB8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Files2", "File2\Files2.csproj", "{E74626DE-842E-4139-B6FB-F65F5E445FB8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Files3", "File3\Files3.csproj", "{DBAF061F-DB04-4963-A113-16B7E783D8FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Files3", "File3\Files3.csproj", "{DBAF061F-DB04-4963-A113-16B7E783D8FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Files4_UsingBlock", "File4_UsingBlock\Files4_UsingBlock.csproj", "{85918079-55AC-4E82-B60D-E8AE2EDBB70D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Files4_UsingBlock", "File4_UsingBlock\Files4_UsingBlock.csproj", "{85918079-55AC-4E82-B60D-E8AE2EDBB70D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Files4_UsingBlockV2", "Files4_UsingBlockV2\Files4_UsingBlockV2.csproj", "{C2EB4D4A-4C10-4702-9425-CB90C73BBF95}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Files4_UsingBlockV2", "Files4_UsingBlockV2\Files4_UsingBlockV2.csproj", "{C2EB4D4A-4C10-4702-9425-CB90C73BBF95}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Files5_StreamWriter", "Files5_StreamWriter\Files5_StreamWriter.csproj", "{F2811596-D010-4F49-A284-9DCD6BE22C96}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Files5_StreamWriter", "Files5_StreamWriter\Files5_StreamWriter.csproj", "{F2811596-D010-4F49-A284-9DCD6BE22C96}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Files6_Directory", "Files6_Directory\Files6_Directory.csproj", "{78667CE7-F764-4571-A8EB-E9A216609A82}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Files6_Directory", "Files6_Directory\Files6_Directory.csproj", "{78667CE7-F764-4571-A8EB-E9A216609A82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Files7_Path", "Files7_Path\Files7_Path.csproj", "{B88A1DAB-9D3C-4F2A-B98D-1932F128C69B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment1", "Assignment1\Assignment1.csproj", "{4AF9472F-0690-4E05-8509-F1C778DEAE2E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +55,14 @@ Global
 		{78667CE7-F764-4571-A8EB-E9A216609A82}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78667CE7-F764-4571-A8EB-E9A216609A82}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78667CE7-F764-4571-A8EB-E9A216609A82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B88A1DAB-9D3C-4F2A-B98D-1932F128C69B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B88A1DAB-9D3C-4F2A-B98D-1932F128C69B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B88A1DAB-9D3C-4F2A-B98D-1932F128C69B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B88A1DAB-9D3C-4F2A-B98D-1932F128C69B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AF9472F-0690-4E05-8509-F1C778DEAE2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AF9472F-0690-4E05-8509-F1C778DEAE2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AF9472F-0690-4E05-8509-F1C778DEAE2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AF9472F-0690-4E05-8509-F1C778DEAE2E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
