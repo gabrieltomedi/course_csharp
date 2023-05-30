@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Files4_UsingBlock", "File4_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Files4_UsingBlockV2", "Files4_UsingBlockV2\Files4_UsingBlockV2.csproj", "{C2EB4D4A-4C10-4702-9425-CB90C73BBF95}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Files5_StreamWriter", "Files5_StreamWriter\Files5_StreamWriter.csproj", "{F2811596-D010-4F49-A284-9DCD6BE22C96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Files6_Directory", "Files6_Directory\Files6_Directory.csproj", "{78667CE7-F764-4571-A8EB-E9A216609A82}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{C2EB4D4A-4C10-4702-9425-CB90C73BBF95}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2EB4D4A-4C10-4702-9425-CB90C73BBF95}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2EB4D4A-4C10-4702-9425-CB90C73BBF95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2811596-D010-4F49-A284-9DCD6BE22C96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2811596-D010-4F49-A284-9DCD6BE22C96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2811596-D010-4F49-A284-9DCD6BE22C96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2811596-D010-4F49-A284-9DCD6BE22C96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78667CE7-F764-4571-A8EB-E9A216609A82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78667CE7-F764-4571-A8EB-E9A216609A82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78667CE7-F764-4571-A8EB-E9A216609A82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78667CE7-F764-4571-A8EB-E9A216609A82}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
