@@ -19,6 +19,9 @@ namespace HashSetAndSortedSet1
             {
                 Console.WriteLine(s);
             }
+
+            //SortedSet
+            Console.WriteLine("\n--- SortedSet---");
         }
     }
 }
