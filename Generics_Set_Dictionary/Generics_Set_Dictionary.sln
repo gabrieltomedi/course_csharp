@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HashSetAndSortedSet2", "Has
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HashSetAndSortedSet3", "HashSetAndSortedSet3\HashSetAndSortedSet3.csproj", "{F8C76DB8-367E-48A4-8510-C311EB6CBB89}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sets1", "Sets1\Sets1.csproj", "{67EC0E07-A778-477A-A8B3-C1D23D37131B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sets1", "Sets1\Sets1.csproj", "{67EC0E07-A778-477A-A8B3-C1D23D37131B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment1", "Assignment1\Assignment1.csproj", "{A2FC92E1-0B47-4034-BF56-70DEA761222D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{67EC0E07-A778-477A-A8B3-C1D23D37131B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{67EC0E07-A778-477A-A8B3-C1D23D37131B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{67EC0E07-A778-477A-A8B3-C1D23D37131B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2FC92E1-0B47-4034-BF56-70DEA761222D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2FC92E1-0B47-4034-BF56-70DEA761222D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2FC92E1-0B47-4034-BF56-70DEA761222D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2FC92E1-0B47-4034-BF56-70DEA761222D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
