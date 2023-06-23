@@ -1,7 +1,6 @@
-﻿using System;
-using System.Globalization;
+﻿using System.Globalization;
 
-namespace ExtensionMethods.Extensions
+namespace System
 {
     internal static class DateTimeExtensions
     {
