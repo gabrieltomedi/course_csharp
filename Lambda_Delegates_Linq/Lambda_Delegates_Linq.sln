@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lambda1", "lambda1\lambda1.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "delegate1", "delegate1\delegate1.csproj", "{97766083-64B2-428D-A3C9-A394C01DF8E1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "delegate2_multicast", "delegate2_multicast\delegate2_multicast.csproj", "{D78A20FB-C375-44AD-8DB2-1C78F41E503B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{97766083-64B2-428D-A3C9-A394C01DF8E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97766083-64B2-428D-A3C9-A394C01DF8E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97766083-64B2-428D-A3C9-A394C01DF8E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D78A20FB-C375-44AD-8DB2-1C78F41E503B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D78A20FB-C375-44AD-8DB2-1C78F41E503B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D78A20FB-C375-44AD-8DB2-1C78F41E503B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D78A20FB-C375-44AD-8DB2-1C78F41E503B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
