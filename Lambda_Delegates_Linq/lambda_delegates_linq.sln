@@ -15,9 +15,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lambda3_action", "lambda3_a
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lambda4_func", "lambda4_func\lambda4_func.csproj", "{BD568112-AFEB-4297-B132-7013E0CF43AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linq1", "Linq1\Linq1.csproj", "{C0467279-4E39-4008-8710-473424A56165}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Linq1", "Linq1\Linq1.csproj", "{C0467279-4E39-4008-8710-473424A56165}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "linq2", "linq2\linq2.csproj", "{D1305EEC-C7D3-402B-A2C9-FE565733EB77}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "linq2", "linq2\linq2.csproj", "{D1305EEC-C7D3-402B-A2C9-FE565733EB77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "linq3", "linq3\linq3.csproj", "{96D2A686-7B80-40C6-BCA3-48686DC32885}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{D1305EEC-C7D3-402B-A2C9-FE565733EB77}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1305EEC-C7D3-402B-A2C9-FE565733EB77}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1305EEC-C7D3-402B-A2C9-FE565733EB77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96D2A686-7B80-40C6-BCA3-48686DC32885}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96D2A686-7B80-40C6-BCA3-48686DC32885}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96D2A686-7B80-40C6-BCA3-48686DC32885}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96D2A686-7B80-40C6-BCA3-48686DC32885}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
